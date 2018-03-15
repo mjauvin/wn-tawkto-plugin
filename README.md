@@ -6,7 +6,7 @@ This plugin provides functionality to integrate [Tawk.to](https://tawk.to) JS Ch
 
 ## Requirements
 
-This plugin requires the ***{% scripts %}*** placeholder within your layout. ([see the documentation](http://octobercms.com/docs/markup/tag-scripts))
+This plugin requires the `{% scripts %}` placeholder within your layout. ([see the documentation](http://octobercms.com/docs/markup/tag-scripts))
 
 ## Plugin Settings
 
@@ -23,7 +23,7 @@ This plugin creates a Settings menu item, found by navigating to ***Settings > M
 
 When a **SiteID** and **Widget Name** has been set in the plugin settings, a Javascript asset will be generated under "assets/js/chat.js".
 
-If the plugin **active** setting is switched ON *and* the component is added to a page, the above asset will get injected automatically into the page's JS assets using the ***{% scripts %}*** placeholder.
+If the plugin **active** setting is switched ON *and* the component is added to a page, the above asset will get injected automatically into the page's JS assets using the `{% scripts %}` placeholder.
 
 	[chat]
 	==
@@ -43,7 +43,7 @@ Just add the following code to your page content:
 	My Page Content
 	{% component "chat" %}
 
-The component will get inserted directly in the layout using the ***{% scripts %}*** anonymous placeholder, not directly in the page's content.
+The component will get inserted directly in the layout using the `{% scripts %}` anonymous placeholder, not directly in the page's content.
 
 Note: When overriding plugin settings in the component, the generated asset will ***NOT*** get inserted on top of this.
 

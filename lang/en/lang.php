@@ -8,7 +8,7 @@
         'description' => 'Configure TawkTo Chat',
     ],
     'fields' => [
-        'active' => 'Chat Active',
+        'is_active' => 'Chat Active',
         'site_id' => 'Chat Site ID',
         'widget' => 'Chat Widget Name',
     ],

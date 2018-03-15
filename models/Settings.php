@@ -29,6 +29,9 @@ class Settings extends Model
         $this->site_id = $this->get('site_id');
         $this->widget = $this->get('widget') ? $this->get('widget') : 'default';
         $chat_widget = $this->makePartial('chat');
-        File::put( __DIR__ . '/../assets/js/chat.js', $chat_widget);
+        $path = __DIR__ . '/../assets/js/';
+        File::makeDirectory($path, $mode = 0777, true, true);
+        File::put( $path . 'chat.js', $chat_widget);
+
     }
 }

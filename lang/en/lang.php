@@ -1,15 +1,15 @@
 <?php return [
     'plugin' => [
         'name' => 'TawkTo',
-        'description' => 'TawkTo Chat Component',
+        'description' => 'tawk.to chat integration plugin',
     ],
     'settings' => [
-        'label' => 'TawkTo Chat',
-        'description' => 'Configure TawkTo Chat',
+        'label' => 'TawkTo',
+        'description' => 'Configure TawkTo Chat Plugin',
     ],
     'fields' => [
-        'is_active' => 'Chat Active',
-        'site_id' => 'Chat Site ID',
-        'widget' => 'Chat Widget Name',
+        'is_active' => 'chat widget integration status',
+        'site_id' => 'tawk.to site ID',
+        'widget' => 'tawk.to widget name',
     ],
 ];

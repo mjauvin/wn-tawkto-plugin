@@ -1,0 +1,19 @@
+tabs:
+    fields:
+        active:
+            type: switch
+            label: 'studioazura.tawkto::lang.fields.active'
+            default: 'off'
+            tab: Chat
+            span: full
+        site_id:
+            type: text
+            label: 'studioazura.tawkto::lang.fields.site_id'
+            tab: Chat
+            span: full
+        widget:
+            type: text
+            label: 'studioazura.tawkto::lang.fields.widget'
+            default: 'default'
+            tab: Chat
+            span: full

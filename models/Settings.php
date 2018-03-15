@@ -30,7 +30,9 @@ class Settings extends Model
         $this->widget = $this->get('widget') ? $this->get('widget') : 'default';
         $chat_widget = $this->makePartial('chat');
         $path = __DIR__ . '/../assets/js/';
-        File::makeDirectory($path, $mode = 0777, true, true);
+        if(!File::exists($path)) {
+            File::makeDirectory($path, $mode = 0777, true, true);
+        }
         File::put( $path . 'chat.js', $chat_widget);
 
     }

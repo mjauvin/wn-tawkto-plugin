@@ -5,7 +5,7 @@ use StudioAzura\TawkTo\Models\Settings;
 
 class Chat extends ComponentBase
 {
-    public $active;
+    public $is_active;
     public $site_id;
     public $widget;
 
@@ -22,7 +22,7 @@ class Chat extends ComponentBase
         $settings = new Settings;
 
         return [
-            'site_id' => [
+            'siteId' => [
                 'title'             => 'Site ID',
                 'description'       => 'Site ID for Tawk.to chat widget',
                 'type'              => 'string',
@@ -41,14 +41,14 @@ class Chat extends ComponentBase
     {
         $settings = new Settings;
 
-        $this->active = $settings::get('active');
-        $this->site_id = $this->property('site_id');
+        $this->is_active = $settings::get('is_active');
+        $this->site_id = $this->property('siteId');
         $this->widget = $this->property('widget');
 
         $inject = ($this->widget == $settings::get('widget') && $this->site_id == $settings::get('site_id'));
-        if ($this->active && $inject) {
+        if ($this->is_active && $inject) {
             $this->addJs('assets/js/chat.js');
-            $this->active = false; // do not show the widget partial in the page body
+            $this->is_active = false; // do not show the widget partial in the page body
         }
     }
 }

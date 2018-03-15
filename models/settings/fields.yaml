@@ -1,8 +1,8 @@
 tabs:
     fields:
-        active:
+        is_active:
             type: switch
-            label: 'studioazura.tawkto::lang.fields.active'
+            label: 'studioazura.tawkto::lang.fields.is_active'
             default: 'off'
             tab: Chat
             span: full

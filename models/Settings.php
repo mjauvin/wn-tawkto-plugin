@@ -28,6 +28,9 @@ class Settings extends Model
         parent::afterModelSave();
         $this->site_id = $this->get('site_id');
         $this->widget = $this->get('widget') ? $this->get('widget') : 'default';
+        if ( !$this->site_id ) {
+            return;
+        }
         $chat_widget = $this->makePartial('chat');
         $path = __DIR__ . '/../assets/js/';
         if(!File::exists($path)) {

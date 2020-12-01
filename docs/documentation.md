@@ -6,7 +6,7 @@ This plugin provides functionality to integrate [Tawk.to](https://tawk.to) JS Ch
 
 ## Requirements
 
-This plugin requires the `{% scripts %}` placeholder within your layout. ([see the documentation](http://octobercms.com/docs/markup/tag-scripts))
+- This plugin requires the `{% scripts %}` placeholder within your layout. ([see the documentation](http://octobercms.com/docs/markup/tag-scripts))
 
 ## Plugin Settings
 

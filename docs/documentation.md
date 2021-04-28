@@ -2,11 +2,11 @@
 
 ## Chat Component
 
-This plugin provides functionality to integrate [Tawk.to](https://tawk.to) JS Chat Widget into an [OctoberCMS](https://octobercms.com) website.
+This plugin provides functionality to integrate [Tawk.to](https://tawk.to) JS Chat Widget into an [Winter CMS](https://wintercms.com) website.
 
 ## Requirements
 
-- This plugin requires the `{% scripts %}` placeholder within your layout. ([see the documentation](http://octobercms.com/docs/markup/tag-scripts))
+- This plugin requires the `{% scripts %}` placeholder within your layout. ([see the documentation](http://wintercms.com/docs/markup/tag-scripts))
 
 ## Plugin Settings
 
